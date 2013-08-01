@@ -1,3 +1,7 @@
+[原文章: https://github.com/airbnb/javascript](https://github.com/airbnb/javascript)
+
+注：本人根据自己的开发习惯删除和修改了部分规范
+
 # JavaScript规范
 
 ## <a name='TOC'>内容列表</a>
@@ -887,7 +891,7 @@
     });
     ```
 
-  - 命名私有属性时前面加个下划线 `_` 
+  - 命名私有属性时前面加个下划线 `_`
 
     ```javascript
     // bad
@@ -1104,7 +1108,7 @@
   - 开始，这保证了如果一个有问题的模块忘记包含最后的分号在合并后不会出现错误
   - 这个文件应该以驼峰命名，并在同名文件夹下，同时导出的时候名字一致
   - 加入一个名为noConflict()的方法来设置导出的模块为之前的版本并返回它
-  - 总是在模块顶部声明 `'use strict';` 
+  - 总是在模块顶部声明 `'use strict';`
 
     ```javascript
     // fancyInput/fancyInput.js
@@ -1170,7 +1174,7 @@
     ```
 
   - 对DOM查询使用级联的 `$('.sidebar ul')` 或 `$('.sidebar ul')`，[jsPerf](http://jsperf.com/jquery-find-vs-context-sel/16)
-  - 对有作用域的jQuery对象查询使用 `find` 
+  - 对有作用域的jQuery对象查询使用 `find`
 
     ```javascript
     // bad
@@ -1219,27 +1223,26 @@
 
 ## <a name='resources'>资源</a>
 
-
 **Read This**
 
   - [Annotated ECMAScript 5.1](http://es5.github.com/)
 
-**Other Styleguides**
+**其它规范**
 
   - [Google JavaScript Style Guide](http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml)
   - [jQuery Core Style Guidelines](http://docs.jquery.com/JQuery_Core_Style_Guidelines)
   - [Principles of Writing Consistent, Idiomatic JavaScript](https://github.com/rwldrn/idiomatic.js/)
 
-**Other Styles**
+**其它风格**
 
   - [Naming this in nested functions](https://gist.github.com/4135065) - Christian Johansen
   - [Conditional Callbacks](https://github.com/airbnb/javascript/issues/52)
 
-**Further Reading**
+**阅读更多**
 
   - [Understanding JavaScript Closures](http://javascriptweblog.wordpress.com/2010/10/25/understanding-javascript-closures/) - Angus Croll
 
-**Books**
+**书籍**
 
   - [JavaScript: The Good Parts](http://www.amazon.com/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742) - Douglas Crockford
   - [JavaScript Patterns](http://www.amazon.com/JavaScript-Patterns-Stoyan-Stefanov/dp/0596806752) - Stoyan Stefanov
@@ -1250,8 +1253,9 @@
   - [Pro JavaScript Techniques](http://www.amazon.com/Pro-JavaScript-Techniques-John-Resig/dp/1590597273) - John Resig
   - [Smashing Node.js: JavaScript Everywhere](http://www.amazon.com/Smashing-Node-js-JavaScript-Everywhere-Magazine/dp/1119962595) - Guillermo Rauch
 
-**Blogs**
+**博客**
 
+  - [Adam Lu](http://adamlu.com/)
   - [DailyJS](http://dailyjs.com/)
   - [JavaScript Weekly](http://javascriptweekly.com/)
   - [JavaScript, JavaScript...](http://javascriptweblog.wordpress.com/)
@@ -1293,13 +1297,13 @@
   - :de: **German**: [timofurrer/javascript-style-guide](https://github.com/timofurrer/javascript-style-guide)
   - :jp: **Japanese**: [mitsuruog/javacript-style-guide](https://github.com/mitsuruog/javacript-style-guide)
   - :br: **Portuguese**: [armoucar/javascript-style-guide](https://github.com/armoucar/javascript-style-guide)
-  - :zh: **Chinese**: [adamlu/javascript-style-guide](https://github.com/adamlu/javascript-style-guide)
+  - :cn: **Chinese**: [adamlu/javascript-style-guide](https://github.com/adamlu/javascript-style-guide)
 
-## <a name='guide-guide'>The JavaScript Style Guide Guide</a>
+## <a name='guide-guide'>JavaScript风格指南</a>
 
   - [Reference](https://github.com/airbnb/javascript/wiki/The-JavaScript-Style-Guide-Guide)
 
-## <a name='authors'>Contributors</a>
+## <a name='authors'>贡献者</a>
 
   - [View Contributors](https://github.com/airbnb/javascript/graphs/contributors)
 
