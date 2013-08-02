@@ -1,5 +1,8 @@
-# CSS编码规范
+原文：https://github.com/csswizardry/CSS-Guidelines 和 https://github.com/chadluo/CSS-Guidelines/blob/master/README.md
 
+注：我根据自己的开发习惯修改和删除了部分规范
+
+# CSS编码规范
 
 在参与规模庞大、历时漫长且参与人数众多的项目时，所有开发者遵守如下规则极为重要：
 
@@ -100,9 +103,9 @@
     [Our
     reset
     styles]
-    
-    
-    
+
+
+
     /*------------------------------------*\
         $FONT-FACE
     \*------------------------------------*/
@@ -211,16 +214,16 @@
 
     /**
      * This is a docBlock style comment
-     * 
+     *
      * This is a longer description of the comment, describing the code in more
      * detail. We limit these lines to a maximum of 80 characters in length.
-     * 
+     *
      * We can have markup in the comments, and are encouraged to do so:
-     * 
+     *
        <div class=foo>
            <p>Lorem</p>
        </div>
-     * 
+     *
      * We do not prefix lines of code with an asterisk as to do so would inhibit
      * copy and paste.
      */
@@ -287,7 +290,7 @@
 ## 简写
 
 **CSS 简写应当谨慎使用。**
-    
+
 编写像 `background:red;` 这样的属性的确很省事，但是你这么写的意思其实是同时声明 `background-image:none; background-position:top left; background-repeat: repeat; background-color:red;`。虽然大多数时候这样不会出什么问题，但是哪怕只出一次问题就值得考虑要不要放弃简写了。这里应当改为 `background-color:red;`。
 
 类似的，像 `margin:0;` 这样的声明的确简洁清爽，但是还是应当<strong>尽量写清楚</strong>。如果你只是想修改底边边距，就要具体一些，写成 `margin-bottom:0;`。
@@ -368,7 +371,7 @@ Class 的优势在于复用性，而且私有度也并不高。私有度非常�
 
 专门为 IE 写的样式基本上都是可以避免的，唯一需要为 IE 专门处理的是为了处理 IE 不支持的内容（例如 PNG）。
 
-简而言之，如果你重构 CSS 的话，所有的布局和盒模型都不用额外兼容 IE。也就是说你基本上不用 `<!--[if IE 7]> element{ margin-left:-9px; } < ![endif]-->` 或者类似的兼容 IE 的写法。 
+简而言之，如果你重构 CSS 的话，所有的布局和盒模型都不用额外兼容 IE。也就是说你基本上不用 `<!--[if IE 7]> element{ margin-left:-9px; } < ![endif]-->` 或者类似的兼容 IE 的写法。
 
 ## Debugging
 
