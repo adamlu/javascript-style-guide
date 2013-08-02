@@ -29,11 +29,11 @@
   1. [ES5 兼容性](#es5)
   1. [性能](#performance)
   1. [资源](#resources)
-  1. [In the Wild](#in-the-wild)
+  1. [哪些人在使用](#in-the-wild)
   1. [翻译](#translation)
-  1. [The JavaScript Style Guide Guide](#guide-guide)
-  1. [Contributors](#contributors)
-  1. [License](#license)
+  1. [JavaScript风格指南](#guide-guide)
+  1. [贡献者](#contributors)
+  1. [许可](#license)
 
 ## <a name='types'>类型</a>
 
@@ -438,8 +438,8 @@
     + **Undefined** 被计算为 **false**
     + **Null** 被计算为 **false**
     + **布尔值** 被计算为 **布尔的值**
-    + **数字** 如果是**+0, -0, or NaN**被计算为 **false** , 否则为 **true**
-    + **字符串** 如果是空字符串 `''`则被计算为 **false**, 否则为 **true**
+    + **数字** 如果是 **+0, -0, or NaN** 被计算为 **false** , 否则为 **true**
+    + **字符串** 如果是空字符串 `''` 则被计算为 **false**, 否则为 **true**
 
     ```javascript
     if ([0]) {
@@ -989,7 +989,7 @@
 
 ## <a name='constructors'>构造器</a>
 
-  - Assign methods to the prototype object, instead of overwriting the prototype with a new object. Overwriting the prototype makes inheritance impossible: by resetting the prototype you'll overwrite the base!给对象原型分配方法，而不是用一个新的对象覆盖原型，覆盖原型会使继承出现问题。
+  - 给对象原型分配方法，而不是用一个新的对象覆盖原型，覆盖原型会使继承出现问题。
 
     ```javascript
     function Jedi() {
@@ -1105,7 +1105,7 @@
 
 ## <a name='modules'>模块</a>
 
-  - 开始，这保证了如果一个有问题的模块忘记包含最后的分号在合并后不会出现错误
+  - 模块应该以 `!` 开始，这保证了如果一个有问题的模块忘记包含最后的分号在合并后不会出现错误
   - 这个文件应该以驼峰命名，并在同名文件夹下，同时导出的时候名字一致
   - 加入一个名为noConflict()的方法来设置导出的模块为之前的版本并返回它
   - 总是在模块顶部声明 `'use strict';`
@@ -1270,9 +1270,9 @@
 
   **[[⬆]](#TOC)**
 
-## <a name='in-the-wild'>In the Wild</a>
+## <a name='in-the-wild'>哪些人在使用</a>
 
-  This is a list of organizations that are using this style guide. Send us a pull request or open an issue and we'll add you to the list.
+  这是一些使用这个风格规范的组织，给我们发pull request或打开一个问题，我们会把你加到列表中。
 
   - **Airbnb**: [airbnb/javascript](https://github.com/airbnb/javascript)
   - **American Insitutes for Research**: [AIRAST/javascript](https://github.com/AIRAST/javascript)
@@ -1292,7 +1292,7 @@
 
 ## <a name='translation'>翻译</a>
 
-  This style guide is also available in other languages:
+  这个风格规范也有其它语言版本：
 
   - :de: **German**: [timofurrer/javascript-style-guide](https://github.com/timofurrer/javascript-style-guide)
   - :jp: **Japanese**: [mitsuruog/javacript-style-guide](https://github.com/mitsuruog/javacript-style-guide)
@@ -1308,7 +1308,7 @@
   - [View Contributors](https://github.com/airbnb/javascript/graphs/contributors)
 
 
-## <a name='license'>License</a>
+## <a name='license'>许可</a>
 
 (The MIT License)
 
