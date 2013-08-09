@@ -1136,16 +1136,6 @@
 
 ## <a name='jquery'>jQuery</a>
 
-  - 用 `$` 来前缀jQuery对象变量
-
-    ```javascript
-    // bad
-    var sidebar = $('.sidebar');
-
-    // good
-    var $sidebar = $('.sidebar');
-    ```
-
   - 缓存jQuery查询
 
     ```javascript
