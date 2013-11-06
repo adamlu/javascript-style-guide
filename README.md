@@ -113,7 +113,7 @@
     var items = [];
     ```
 
-  - 如果你不知道数组的长度，使用push
+  - 如果你不知道数组的长度，使用 `push`
 
     ```javascript
     var someStack = [];
@@ -126,7 +126,7 @@
     someStack.push('abracadabra');
     ```
 
-  - 当你需要拷贝数组时使用slice. [jsPerf](http://jsperf.com/converting-arguments-to-an-array/7)
+  - 当你需要拷贝数组时使用 `slice`. [jsPerf](http://jsperf.com/converting-arguments-to-an-array/7)
 
     ```javascript
     var len = items.length,
@@ -142,7 +142,7 @@
     itemsCopy = items.slice();
     ```
 
-  - 使用slice将类数组的对象转成数组.
+  - 使用 `slice` 将类数组的对象转成数组.
 
     ```javascript
     function trigger() {
@@ -197,7 +197,7 @@
       'fast.';
     ```
 
-  - 编程时使用join而不是字符串连接来构建字符串，特别是IE: [jsPerf](http://jsperf.com/string-vs-array-concat/2).
+  - 编程时使用`join`而不是字符串连接来构建字符串，特别是IE: [jsPerf](http://jsperf.com/string-vs-array-concat/2).
 
     ```javascript
     var items,
@@ -936,7 +936,7 @@
 ## <a name='accessors'>存取器</a>
 
   - 属性的存取器函数不是必需的
-  - 如果你确实有存取器函数的话使用getVal() 和 setVal('hello')
+  - 如果你确实有存取器函数的话使用 `getVal()` 和 `setVal('hello')`
 
     ```javascript
     // bad
@@ -952,7 +952,7 @@
     dragon.setAge(25);
     ```
 
-  - 如果属性是布尔值，使用isVal() 或 hasVal()
+  - 如果属性是布尔值，使用 `isVal()` 或 `hasVal()`
 
     ```javascript
     // bad
@@ -966,7 +966,7 @@
     }
     ```
 
-  - 可以创建get()和set()函数，但是要保持一致
+  - 可以创建 `get()` 和 `set()` 函数，但是要保持一致
 
     ```javascript
     function Jedi(options) {
@@ -1052,7 +1052,7 @@
     ```
 
 
-  - 可以写一个自定义的toString()方法，但是确保它工作正常并且不会有副作用。
+  - 可以写一个自定义的 `toString()` 方法，但是确保它工作正常并且不会有副作用。
 
     ```javascript
     function Jedi(options) {
@@ -1107,7 +1107,7 @@
 
   - 模块应该以 `!` 开始，这保证了如果一个有问题的模块忘记包含最后的分号在合并后不会出现错误
   - 这个文件应该以驼峰命名，并在同名文件夹下，同时导出的时候名字一致
-  - 加入一个名为noConflict()的方法来设置导出的模块为之前的版本并返回它
+  - 加入一个名为 `noConflict()` 的方法来设置导出的模块为之前的版本并返回它
   - 总是在模块顶部声明 `'use strict';`
 
     ```javascript
