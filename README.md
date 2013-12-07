@@ -196,8 +196,11 @@
       'with this, you would get nowhere ' +
       'fast.';
     ```
+  - 如果你的Javascript跑在浏览器中，使用join来构建字符串，而NodeJS开发者则应当使用字符串连接，特别是大规模数据下.
 
-  - 编程时使用join而不是字符串连接来构建字符串，特别是IE: [jsPerf](http://jsperf.com/string-vs-array-concat/2).
+    基准测试：
+    - [浏览器](http://jsperf.com/string-vs-array-concat/2)
+    - [NodeJS](https://gist.github.com/yorkie/7837575)
 
     ```javascript
     var items,
