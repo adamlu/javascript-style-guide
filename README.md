@@ -508,6 +508,7 @@
 
 ## <a name='comments'>注释</a>
 
+```
   - 使用 `/** ... */` 进行多行注释，包括描述，指定类型以及参数值和返回值
 
     ```javascript
@@ -592,7 +593,7 @@
     }
   ```
 
-    **[[⬆]](#TOC)**
+**[[⬆]](#TOC)**
 
 
 ## <a name='whitespace'>空白</a>
@@ -1324,5 +1325,3 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 **[[⬆]](#TOC)**
-
-# };
